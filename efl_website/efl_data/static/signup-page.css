@@ -1,0 +1,427 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    height: 100%;
+    padding: 0;
+    font-family: 'ITCAvant Garde Gothic Pro-Light', 'Helvetica', 'Arial', sans-serif;
+    background-image: url('AdobeStock_101827233 [Converted].png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #1E1E1E;
+    backdrop-filter: blur(5px);
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #EC8E39;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5), 0 0 5px rgba(0,0,0,0.5);
+}
+
+nav li button:hover {
+    background-color: #9a5f1d;
+    border-color: #503b0d;
+    color: white;
+  }
+
+nav li:not(:last-child) button {
+    margin-right: -5px;
+}
+
+.site-name {
+    font-size: 65px;
+    color: #EC8E39;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.label-title,
+.label-forename,
+.label-surname,
+.label-employee,
+.label-password,
+.label-password2,
+.label-email,
+.label-phone,
+.label-dob,
+.label-add1,
+.label-add2,
+.label-postcode {
+    font-size: 16px;
+}
+
+.title-entry,
+.forename-entry,
+.surname-entry,
+.employee-entry,
+.password-entry,
+.password2-entry,
+.email-entry,
+.phone-entry,
+.dob-entry,
+.add1-entry,
+.add2-entry,
+.postcode-entry {
+    font-size: 14px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.signup-button {
+    font-size: 16px;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+    .label-title,
+    .label-forename,
+    .label-surname,
+    .label-employee,
+    .label-password,
+    .label-password2,
+    .label-email,
+    .label-phone,
+    .label-dob,
+    .label-add1,
+    .label-add2,
+    .label-postcode {
+        font-size: 20px;
+    }
+
+    .title-entry,
+    .forename-entry,
+    .surname-entry,
+    .employee-entry,
+    .password-entry,
+    .password2-entry,
+    .email-entry,
+    .phone-entry,
+    .dob-entry,
+    .add1-entry,
+    .add2-entry,
+    .postcode-entry {
+        font-size: 18px;
+    }
+
+    .signup-button {
+        font-size: 20px;
+    }
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.form-container {
+    margin: 20px auto;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+}
+
+.label-title {
+    color: white;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.title-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.label-forename {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.forename-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.label-surname {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.surname-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.label-employee {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.employee-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.label-password {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.password-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.label-password2 {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.password2-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.label-email {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.email-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.label-phone {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.phone-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.label-dob {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.dob-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.label-add1 {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.add1-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.label-add2 {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.add2-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.label-postcode {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.postcode-entry {
+    background-color: #d7c4a7;
+    border-radius: 100px;
+    font-size: 55px;
+    color: #d09414;
+}
+
+.signup-button {
+    font-size: 40px;
+    border-radius: 100px;
+    border-color: #dec183;
+    background-color: #d6b15a;
+    padding: 10px 20px;
+    color: white;
+}
+
+.signup-button:hover {
+    background-color: #9a5f1d;
+    border-color: #503b0d;
+    color: #ffffff;
+}
+
+.back-button {
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    z-index: 1;
+}
+
+.BBH {
+    width: 20px;
+    height: 20px;
+}
+
+.back-button:hover {
+    background-color: #503b0d;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label-title,
+.label-forename,
+.label-surname,
+.label-employee,
+.label-password,
+.label-password2,
+.label-email,
+.label-phone,
+.label-dob,
+.label-add1,
+.label-add2,
+.label-postcode {
+    margin-right: 10px;
+}
+
+.title-entry,
+.forename-entry,
+.surname-entry,
+.employee-entry,
+.password-entry,
+.password2-entry,
+.email-entry,
+.phone-entry,
+.dob-entry,
+.add1-entry,
+.add2-entry,
+.postcode-entry {
+    margin-left: 10px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

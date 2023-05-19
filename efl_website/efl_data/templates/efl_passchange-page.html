@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <script>
+        document.getElementById("target-button").addEventListener("click", function() {
+            location.href = "target-page.html";
+        });
+    </script>
+    <script>
+        function goBack() {
+          if (window.history.length > 1) {
+            window.history.back();
+          } else {
+            alert("No history to go back to!");
+          }
+        }
+      </script>
+    <head>
+        <meta charset="utf-8" />
+        <title>EFL</title>
+        <link rel="stylesheet" href="{% static 'passchange-page.css' %}">
+    </head>
+    <body>
+        <header>
+            <a href="home-page.html">
+                <img src="{% static 'logo.svg' %}" class="profile-img">
+            </a>
+            <nav>
+                <ul>
+                    <li><button onclick="location.href='{% url "home" %}'">Home</button></li>
+                    <li><button onclick="location.href='{% url "about" %}'">About</button></li>
+                    <li><button onclick="location.href='{% url "contact" %}'">Contact</button></li>
+                    <li><button onclick="location.href='{% url "data" %}'">Dashboard</button></li>
+                </ul>
+                <h1 class="site-name">EFL</h1>
+            </nav>
+        </header>
+        <main>
+            <button class="back-button" onclick="goBack()"><img src="{% static 'backarrow.png' %}" class="BBH"></button>
+            <h3 class="text">An email has been sent to change your password.</h3>
+        </main>
+    </body>
+</html>
